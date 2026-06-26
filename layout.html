@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Company Website Wireframe</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    margin:40px 0;
+}
+
+.placeholder{
+    background:#ddd;
+    border:2px dashed #999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#666;
+}
+
+header{
+    background:#fff;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    width:160px;
+    height:50px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+}
+
+.btn{
+    background:#222;
+    color:white;
+    padding:12px 22px;
+    border-radius:6px;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.hero-content h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+.button-group{
+    display:flex;
+    gap:15px;
+}
+
+.hero-image{
+    height:450px;
+}
+
+.form-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.form-box,
+.why-box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+.form-placeholder{
+    height:420px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.service-card{
+    height:220px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.about-image{
+    height:350px;
+}
+
+.about-text{
+    background:white;
+    padding:30px;
+}
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.review-card{
+    height:180px;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:40px;
+}
+
+.map{
+    height:350px;
+}
+
+.contact-info{
+    background:white;
+    padding:30px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    margin-top:60px;
+    padding:50px 0;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin:12px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:32px;
+}
+
+@media(max-width:900px){
+
+.hero,
+.form-section,
+.about,
+.contact,
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.service-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.review-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+nav{
+display:none;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="container navbar">
+
+<div class="placeholder logo">LOGO</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+
+<a href="#" class="btn">Contact Us</a>
+</nav>
+
+</div>
+</header>
+
+
+<section class="container hero">
+
+<div class="hero-content">
+
+<h1>Professional Security Services</h1>
+
+<p>
+Protecting businesses, residential communities and events with trained,
+licensed security personnel.
+</p>
+
+<div class="button-group">
+<a class="btn">Get a Quote</a>
+<a class="btn">Call Now</a>
+</div>
+
+</div>
+
+<div class="placeholder hero-image">
+Hero Image Placeholder
+</div>
+
+</section>
+
+
+
+<section class="container form-section">
+
+<div class="form-box">
+
+<h2>Enquiry Form</h2>
+
+<br>
+
+<div class="placeholder form-placeholder">
+Form Fields
+<br>
+Name
+<br>
+Phone
+<br>
+Email
+<br>
+Service
+<br>
+Message
+<br>
+Submit Button
+</div>
+
+</div>
+
+<div class="why-box">
+
+<h2>Why Choose Us</h2>
+
+<br>
+
+<ul>
+<li>✔ Licensed Security Personnel</li>
+<br>
+<li>✔ Trained Professionals</li>
+<br>
+<li>✔ 24/7 Support</li>
+<br>
+<li>✔ Corporate & Residential Security</li>
+<br>
+<li>✔ Event Security</li>
+<br>
+<li>✔ Trusted Service</li>
+</ul>
+
+</div>
+
+</section>
+
+
+
+<section class="container">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="service-grid">
+
+<div class="placeholder service-card">Security Guards</div>
+
+<div class="placeholder service-card">Event Security</div>
+
+<div class="placeholder service-card">CCTV Monitoring</div>
+
+<div class="placeholder service-card">Corporate Security</div>
+
+</div>
+
+</section>
+
+
+
+<section class="container about">
+
+<div class="placeholder about-image">
+Company Image
+</div>
+
+<div class="about-text">
+
+<h2>About Us</h2>
+
+<br>
+
+<p>
+Company introduction goes here. Highlight years of experience,
+trained professionals, certifications and client satisfaction.
+</p>
+
+<br>
+
+<a class="btn">Read More</a>
+
+</div>
+
+</section>
+
+
+
+<section class="container">
+
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="review-grid">
+
+<div class="placeholder review-card">
+★★★★★
+<br><br>
+Review Card
+</div>
+
+<div class="placeholder review-card">
+★★★★★
+<br><br>
+Review Card
+</div>
+
+<div class="placeholder review-card">
+★★★★★
+<br><br>
+Review Card
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="container contact">
+
+<div class="placeholder map">
+Google Maps
+</div>
+
+<div class="contact-info">
+
+<h2>Contact Us</h2>
+
+<br>
+
+<p><strong>Office Address</strong></p>
+
+<br>
+
+<p><strong>Phone</strong></p>
+
+<br>
+
+<p><strong>Email</strong></p>
+
+<br>
+
+<a class="btn">Call Now</a>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<div class="placeholder logo" style="background:#444;color:white;border:none;">
+LOGO
+</div>
+
+<br>
+
+<p>OFFICE ADDRESS</p>
+
+<br>
+
+<p>PHONE</p>
+
+<br>
+
+<p>EMAIL</p>
+
+</div>
+
+<div>
+
+<h3>Useful Links</h3>
+
+<ul>
+
+<li>About Us</li>
+
+<li>Services</li>
+
+<li>Privacy Policy</li>
+
+<li>Terms of Use</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
+
+<br>
+
+<div class="placeholder" style="height:60px;background:#444;color:white;border:none;">
+Social Media Icons
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+</body>
+</html>
