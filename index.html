@@ -61,15 +61,23 @@
   <main>
     <!-- 1. HERO SECTION -->
     <section class="hero-section" id="hero">
+      <div class="hero-bg-image-wrapper"
+        style="position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden;">
+        <img src="hero_bg.jpg" alt="Defence Force Security Guards in Dubai"
+          style="width: 100%; height: 100%; object-fit: cover; object-position: center; transform: translateZ(0); will-change: transform;">
+        <div
+          style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);">
+        </div>
+      </div>
       <div class="ambient-glow" id="hero-glow"></div>
       <div class="container hero-container">
         <div class="hero-content">
           <h1 class="hero-title">
-            SIRA-Licensed Security Services Provider in Dubai
+            SIRA-Licensed Security Services
           </h1>
           <p class="hero-description">
-            Professional, reliable, and highly trained security personnel for commercial, residential, hospitality, and
-            event environments.
+            Professional, reliable, and highly trained security personnel serving commercial, residential, hospitality,
+            and event environments across Dubai.
           </p>
 
           <div class="hero-badges" style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px;">
@@ -84,10 +92,6 @@
               Personnel</span>
           </div>
 
-          <div class="hero-actions">
-            <a href="#enquiry" class="btn btn-primary">Request a Quote</a>
-            <a href="#contact" class="btn btn-secondary">Contact Us</a>
-          </div>
         </div>
       </div>
     </section>
@@ -660,7 +664,7 @@
 
         <div class="grid-2-col" style="align-items: stretch; margin-bottom: 48px;">
           <!-- Left Column: Slogan Callout and Compliance -->
-          <div class="glass-card"
+          <div
             style="padding: 40px; display: flex; flex-direction: column; justify-content: center; border-left: 4px solid var(--accent-gold);">
             <span
               style="font-size: 1.25rem; font-family: var(--font-heading); color: var(--accent-gold); font-weight: 600; margin-bottom: 12px; display: block;">Our
@@ -695,7 +699,7 @@
 
           <!-- Right Column: Vision & Mission -->
           <div style="display: flex; flex-direction: column; gap: 24px;">
-            <div class="glass-card" style="padding: 32px; border-left: 3px solid var(--accent-gold);">
+            <div style="padding: 32px; border-left: 3px solid var(--accent-gold);">
               <h3
                 style="font-size: 1.35rem; color: var(--text-white); margin-bottom: 12px; font-family: var(--font-heading); display: flex; align-items: center; gap: 10px;">
                 <i class="fa-solid fa-eye" style="color: var(--accent-gold); font-size: 1.2rem;"></i>Vision
@@ -705,7 +709,7 @@
               </p>
             </div>
 
-            <div class="glass-card" style="padding: 32px; border-left: 3px solid var(--accent-gold);">
+            <div style="padding: 32px; border-left: 3px solid var(--accent-gold);">
               <h3
                 style="font-size: 1.35rem; color: var(--text-white); margin-bottom: 12px; font-family: var(--font-heading); display: flex; align-items: center; gap: 10px;">
                 <i class="fa-solid fa-bullseye" style="color: var(--accent-gold); font-size: 1.2rem;"></i>Mission
@@ -755,9 +759,9 @@
     <section class="contact-section" id="contact" style="padding: 100px 0; border-top: 1px solid var(--border-light);">
       <div class="container">
         <!-- Three blocks before the form -->
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 56px;"
+        <!-- <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 56px;"
           class="contact-blocks-grid">
-          <!-- Operations & Support -->
+     
           <div class="glass-card" style="padding: 32px; border-top: 3px solid var(--accent-gold);">
             <h3
               style="font-size: 1.25rem; color: var(--text-white); margin-bottom: 16px; font-family: var(--font-heading); display: flex; align-items: center; gap: 8px;">
@@ -779,7 +783,6 @@
             </ul>
           </div>
 
-          <!-- Client Commitment -->
           <div class="glass-card" style="padding: 32px; border-top: 3px solid var(--accent-gold);">
             <h3
               style="font-size: 1.25rem; color: var(--text-white); margin-bottom: 16px; font-family: var(--font-heading); display: flex; align-items: center; gap: 8px;">
@@ -798,7 +801,6 @@
             </ul>
           </div>
 
-          <!-- Flexible Pricing -->
           <div class="glass-card" style="padding: 32px; border-top: 3px solid var(--accent-gold);">
             <h3
               style="font-size: 1.25rem; color: var(--text-white); margin-bottom: 16px; font-family: var(--font-heading); display: flex; align-items: center; gap: 8px;">
@@ -817,7 +819,7 @@
                   style="color: var(--accent-gold); font-size: 0.85rem;"></i> Trial Arrangements Available</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <div class="grid-2-col" style="gap: 48px;">
           <!-- Left: Contact Information & CTA -->
@@ -974,6 +976,10 @@
     </div>
   </footer>
 
+  <!-- Floating WhatsApp Contact Icon -->
+  <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" aria-label="WhatsApp Contact">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <!-- Script File -->
   <script src="script.js"></script>
