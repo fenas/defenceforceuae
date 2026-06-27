@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="description"
+    content="DefenceForce is the leading security guard service provider in Dubai and the UAE. We provide SIRA-licensed, highly trained security guards for businesses, schools, malls, banks, hospitals, and events.">
+  <meta name="keywords"
+    content="DefenceForce, Gold Guard Security, Security Guards Dubai, SIRA Security Guards, Event Security UAE, Mall Security Dubai, VIP Protection UAE, Bank Guards Dubai, School Security UAE">
+  <title>DefenceForce | Premium Security Guard Services Dubai & UAE</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+</head>
+
+<body class="dark-theme">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- Header / Navigation -->
+  <header class="main-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="logo" style="display: flex; align-items: center; text-decoration: none;">
+        <img src="logo.png" alt="Defence Force Logo" style="height: 64px; width: auto; object-fit: contain;">
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#enquiry" class="nav-link">Enquiry</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About & Services</a></li>
+          <li class="nav-item"><a href="#training" class="nav-link">Training</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline nav-cta">Contact Us</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="ambient-glow" id="hero-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            SIRA-Licensed Security Services Provider in Dubai
+          </h1>
+          <p class="hero-description">
+            Professional, reliable, and highly trained security personnel for commercial, residential, hospitality, and
+            event environments.
+          </p>
+
+          <div class="hero-badges" style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px;">
+            <span class="license-badge" style="display: inline-flex; align-items: center; gap: 6px;"><i
+                class="fa-solid fa-shield-halved" style="color: var(--accent-gold);"></i> SIRA Licensed</span>
+            <span class="license-badge" style="display: inline-flex; align-items: center; gap: 6px;"><i
+                class="fa-solid fa-square-check" style="color: var(--accent-gold);"></i> UAE Compliant</span>
+            <span class="license-badge" style="display: inline-flex; align-items: center; gap: 6px;"><i
+                class="fa-solid fa-clock" style="color: var(--accent-gold);"></i> 24/7 Operations</span>
+            <span class="license-badge" style="display: inline-flex; align-items: center; gap: 6px;"><i
+                class="fa-solid fa-user-shield" style="color: var(--accent-gold);"></i> Trained Security
+              Personnel</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#enquiry" class="btn btn-primary">Request a Quote</a>
+            <a href="#contact" class="btn btn-secondary">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ENQUIRY FORM + WHY CHOOSE US -->
+    <section class="enquiry-section" id="enquiry"
+      style="padding: 100px 0; border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Enquiry Portal</span>
+          <h2 class="section-title">Request a Tactical Consultation</h2>
+          <p class="section-description mx-auto">
+            Brief our command team on your location parameters. We will customize your guard deployment plan and respond
+            within 2 hours.
+          </p>
+        </div>
+
+        <div class="glass-card enquiry-wrapper">
+          <!-- Left Column: Enquiry Form -->
+          <div class="contact-form-panel" style="padding: 48px; border-right: 1px solid var(--border-light);">
+            <form class="contact-form" id="consultation-form" style="display: flex; flex-direction: column; gap: 20px;">
+              <div class="form-group" style="display: flex; flex-direction: column;">
+                <label for="contact-name"
+                  style="font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; color: var(--text-white); margin-bottom: 8px;">Full
+                  Name</label>
+                <input type="text" id="contact-name" name="name" required placeholder="e.g. Alexander Vance"
+                  style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-light); border-radius: 10px; padding: 14px; color: var(--text-white); outline: none;">
+              </div>
+
+              <div class="form-group" style="display: flex; flex-direction: column;">
+                <label for="contact-company"
+                  style="font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; color: var(--text-white); margin-bottom: 8px;">Organization
+                  / Venue</label>
+                <input type="text" id="contact-company" name="company" placeholder="e.g. Amsaf Complex"
+                  style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-light); border-radius: 10px; padding: 14px; color: var(--text-white); outline: none;">
+              </div>
+
+              <div class="form-row grid-2-col" style="display: grid; gap: 20px; grid-template-columns: repeat(2, 1fr);">
+                <div class="form-group" style="display: flex; flex-direction: column;">
+                  <label for="contact-email"
+                    style="font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; color: var(--text-white); margin-bottom: 8px;">Corporate
+                    Email</label>
+                  <input type="email" id="contact-email" name="email" required placeholder="e.g. safety@company.ae"
+                    style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-light); border-radius: 10px; padding: 14px; color: var(--text-white); outline: none;">
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column;">
+                  <label for="contact-sector"
+                    style="font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; color: var(--text-white); margin-bottom: 8px;">Target
+                    Sector</label>
+                  <select id="contact-sector" name="sector" required
+                    style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-light); border-radius: 10px; padding: 14px; color: var(--text-white); outline: none;">
+                    <option value="" disabled selected>Select Sector to Secure</option>
+                    <option value="hospitality">Hotels & Hospitality</option>
+                    <option value="commercial">Commercial Buildings & Offices</option>
+                    <option value="finance">Banks & Financial Institutions</option>
+                    <option value="residential">Residential Towers & Communities</option>
+                    <option value="retail">Retail & Shopping Centers</option>
+                    <option value="events">Events & Crowd Control</option>
+                    <option value="construction">Construction & Industrial Sites</option>
+                    <option value="nightlife">Bars, Clubs & Entertainment Venues</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group" style="display: flex; flex-direction: column;">
+                <label for="contact-message"
+                  style="font-family: var(--font-heading); font-size: 0.85rem; font-weight: 500; color: var(--text-white); margin-bottom: 8px;">Operational
+                  Brief / Message</label>
+                <textarea id="contact-message" name="message" rows="4" required
+                  placeholder="Briefly outline details of deployment, timeline, or asset locations..."
+                  style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-light); border-radius: 10px; padding: 14px; color: var(--text-white); outline: none; font-family: var(--font-body);"></textarea>
+              </div>
+
+              <div class="form-group checkbox-group"
+                style="display: flex; flex-direction: row; align-items: flex-start; gap: 10px;">
+                <input type="checkbox" id="contact-consent" name="consent" required
+                  style="margin-top: 4px; accent-color: var(--accent-gold);">
+                <label for="contact-consent"
+                  style="font-size: 0.85rem; color: var(--text-gray); line-height: 1.4; cursor: pointer;">I consent to
+                  secure assessment processing in compliance with SIRA guidelines.</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit" style="width: 100%;">
+                Submit Guard Placement Request
+              </button>
+              <div id="form-feedback" class="form-feedback"
+                style="font-family: var(--font-heading); font-size: 0.9rem; margin-top: 10px; display: none;"></div>
+            </form>
+          </div>
+
+          <!-- Right Column: Why Choose Defence Force Security -->
+          <div class="contact-info-panel"
+            style="padding: 40px; background: linear-gradient(135deg, rgba(245, 166, 35, 0.05) 0%, rgba(0,0,0,0) 100%); display: flex; flex-direction: column; justify-content: flex-start; gap: 16px;">
+            <h3 class="contact-panel-title"
+              style="font-size: 1.5rem; margin-bottom: 8px; color: var(--text-white); font-family: var(--font-heading); margin-top: 0;">
+              Why Choose Defence Force Security</h3>
+
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; margin: 0;"
+              class="why-choose-list">
+              <li style="display: flex; gap: 16px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1.25rem; display: inline-block; min-width: 24px; text-align: center; margin-top: 2px;"><i
+                    class="fa-solid fa-graduation-cap"></i></span>
+                <div>
+                  <strong
+                    style="color: var(--text-white); display: block; margin-bottom: 4px; font-family: var(--font-heading); font-size: 0.98rem;">SIRA-Focused
+                    Training</strong>
+                  <p style="font-size: 0.85rem; color: var(--text-gray); line-height: 1.4;">Professionally trained
+                    personnel following UAE security standards.</p>
+                </div>
+              </li>
+              <li style="display: flex; gap: 16px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1.25rem; display: inline-block; min-width: 24px; text-align: center; margin-top: 2px;"><i
+                    class="fa-solid fa-clock"></i></span>
+                <div>
+                  <strong
+                    style="color: var(--text-white); display: block; margin-bottom: 4px; font-family: var(--font-heading); font-size: 0.98rem;">24/7
+                    Operations</strong>
+                  <p style="font-size: 0.85rem; color: var(--text-gray); line-height: 1.4;">Round-the-clock protection
+                    and supervision.</p>
+                </div>
+              </li>
+              <li style="display: flex; gap: 16px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1.25rem; display: inline-block; min-width: 24px; text-align: center; margin-top: 2px;"><i
+                    class="fa-solid fa-user-shield"></i></span>
+                <div>
+                  <strong
+                    style="color: var(--text-white); display: block; margin-bottom: 4px; font-family: var(--font-heading); font-size: 0.98rem;">Proactive
+                    Guards</strong>
+                  <p style="font-size: 0.85rem; color: var(--text-gray); line-height: 1.4;">Smart, alert and
+                    customer-focused professionals.</p>
+                </div>
+              </li>
+              <li style="display: flex; gap: 16px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1.25rem; display: inline-block; min-width: 24px; text-align: center; margin-top: 2px;"><i
+                    class="fa-solid fa-scale-balanced"></i></span>
+                <div>
+                  <strong
+                    style="color: var(--text-white); display: block; margin-bottom: 4px; font-family: var(--font-heading); font-size: 0.98rem;">Strong
+                    Ethics</strong>
+                  <p style="font-size: 0.85rem; color: var(--text-gray); line-height: 1.4;">Integrity, discipline and
+                    accountability.</p>
+                </div>
+              </li>
+              <li style="display: flex; gap: 16px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1.25rem; display: inline-block; min-width: 24px; text-align: center; margin-top: 2px;"><i
+                    class="fa-solid fa-rotate"></i></span>
+                <div>
+                  <strong
+                    style="color: var(--text-white); display: block; margin-bottom: 4px; font-family: var(--font-heading); font-size: 0.98rem;">Refresher
+                    Training</strong>
+                  <p style="font-size: 0.85rem; color: var(--text-gray); line-height: 1.4;">Regular skill development
+                    and compliance updates.</p>
+                </div>
+              </li>
+              <li style="display: flex; gap: 16px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1.25rem; display: inline-block; min-width: 24px; text-align: center; margin-top: 2px;"><i
+                    class="fa-solid fa-handshake-angle"></i></span>
+                <div>
+                  <strong
+                    style="color: var(--text-white); display: block; margin-bottom: 4px; font-family: var(--font-heading); font-size: 0.98rem;">Hands-On
+                    Management</strong>
+                  <p style="font-size: 0.85rem; color: var(--text-gray); line-height: 1.4;">Direct oversight and
+                    accountability.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT US & OUR SERVICES -->
+    <section class="about-services-section" id="about"
+      style="padding: 100px 0; border-bottom: 1px solid var(--border-light); background: var(--bg-secondary);">
+      <div class="container">
+        <div class="grid-2-col" style="align-items: start; gap: 48px;">
+          <!-- Left Column: Team Photo -->
+          <div class="expertise-visual">
+            <div class="about-image-wrapper"
+              style="height: 520px; border-radius: 20px; overflow: hidden; border: 1px solid var(--border-light); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+              <img src="about_training.png" alt="Defence Force Security Service LLC Recruits" class="about-featured-img"
+                style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+
+          <!-- Right Column: Who We Are & Services Grid -->
+          <div>
+            <span class="section-tag">Vetted & Licensed</span>
+            <h2 class="section-title" style="margin-bottom: 16px;">Who We Are</h2>
+
+            <p style="font-size: 1.05rem; line-height: 1.6; color: var(--text-silver); margin-bottom: 32px;">
+              Defence Force Security Service LLC is a licensed security service provider in Dubai delivering
+              professional, well-trained and reliable security personnel for hospitality, commercial, residential and
+              event-based environments.
+            </p>
+
+            <h3
+              style="font-size: 1.25rem; color: var(--text-white); margin-bottom: 20px; font-family: var(--font-heading); letter-spacing: 0.05em; text-transform: uppercase;">
+              Our Services</h3>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;" class="services-list-grid">
+              <div
+                style="display: flex; gap: 12px; align-items: center; background: rgba(255, 255, 255, 0.02); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-light);">
+                <i class="fa-solid fa-hotel"
+                  style="font-size: 1.2rem; color: var(--accent-gold); width: 20px; text-align: center;"></i>
+                <span style="font-size: 0.95rem; color: var(--text-gray); font-family: var(--font-heading);">Hotels &
+                  Hospitality</span>
+              </div>
+              <div
+                style="display: flex; gap: 12px; align-items: center; background: rgba(255, 255, 255, 0.02); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-light);">
+                <i class="fa-solid fa-building"
+                  style="font-size: 1.2rem; color: var(--accent-gold); width: 20px; text-align: center;"></i>
+                <span style="font-size: 0.95rem; color: var(--text-gray); font-family: var(--font-heading);">Commercial
+                  Buildings & Offices</span>
+              </div>
+              <div
+                style="display: flex; gap: 12px; align-items: center; background: rgba(255, 255, 255, 0.02); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-light);">
+                <i class="fa-solid fa-building-columns"
+                  style="font-size: 1.2rem; color: var(--accent-gold); width: 20px; text-align: center;"></i>
+                <span style="font-size: 0.95rem; color: var(--text-gray); font-family: var(--font-heading);">Banks &
+                  Financial Institutions</span>
+              </div>
+              <div
+                style="display: flex; gap: 12px; align-items: center; background: rgba(255, 255, 255, 0.02); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-light);">
+                <i class="fa-solid fa-house"
+                  style="font-size: 1.2rem; color: var(--accent-gold); width: 20px; text-align: center;"></i>
+                <span style="font-size: 0.95rem; color: var(--text-gray); font-family: var(--font-heading);">Residential
+                  Towers & Communities</span>
+              </div>
+              <div
+                style="display: flex; gap: 12px; align-items: center; background: rgba(255, 255, 255, 0.02); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-light);">
+                <i class="fa-solid fa-bag-shopping"
+                  style="font-size: 1.2rem; color: var(--accent-gold); width: 20px; text-align: center;"></i>
+                <span style="font-size: 0.95rem; color: var(--text-gray); font-family: var(--font-heading);">Retail &
+                  Shopping Centers</span>
+              </div>
+              <div
+                style="display: flex; gap: 12px; align-items: center; background: rgba(255, 255, 255, 0.02); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-light);">
+                <i class="fa-solid fa-calendar-check"
+                  style="font-size: 1.2rem; color: var(--accent-gold); width: 20px; text-align: center;"></i>
+                <span style="font-size: 0.95rem; color: var(--text-gray); font-family: var(--font-heading);">Events &
+                  Crowd Control</span>
+              </div>
+              <div
+                style="display: flex; gap: 12px; align-items: center; background: rgba(255, 255, 255, 0.02); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-light);">
+                <i class="fa-solid fa-helmet-safety"
+                  style="font-size: 1.2rem; color: var(--accent-gold); width: 20px; text-align: center;"></i>
+                <span
+                  style="font-size: 0.95rem; color: var(--text-gray); font-family: var(--font-heading);">Construction &
+                  Industrial Sites</span>
+              </div>
+              <div
+                style="display: flex; gap: 12px; align-items: center; background: rgba(255, 255, 255, 0.02); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-light);">
+                <i class="fa-solid fa-champagne-glasses"
+                  style="font-size: 1.2rem; color: var(--accent-gold); width: 20px; text-align: center;"></i>
+                <span style="font-size: 0.95rem; color: var(--text-gray); font-family: var(--font-heading);">Bars, Clubs
+                  & Entertainment Venues</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom: Scope of Duties horizontal grid -->
+        <div class="glass-card"
+          style="margin-top: 56px; padding: 40px; border-top: 1px solid var(--border-gold-light); background: linear-gradient(135deg, rgba(245, 166, 35, 0.02) 0%, rgba(0,0,0,0) 100%);">
+          <h3
+            style="font-size: 1.35rem; margin-bottom: 28px; text-align: center; font-family: var(--font-heading); color: var(--text-white); letter-spacing: 0.05em; text-transform: uppercase;">
+            Scope of Duties</h3>
+          <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 16px; text-align: center;"
+            class="duties-horizontal-grid">
+            <div class="duty-item">
+              <div style="margin-bottom: 12px;"><i class="fa-solid fa-key"
+                  style="font-size: 1.85rem; color: var(--accent-gold);"></i></div>
+              <h4
+                style="font-size: 0.85rem; font-family: var(--font-heading); font-weight: 500; color: var(--text-white);">
+                Access Control</h4>
+            </div>
+            <div class="duty-item">
+              <div style="margin-bottom: 12px;"><i class="fa-solid fa-person-walking"
+                  style="font-size: 1.85rem; color: var(--accent-gold);"></i></div>
+              <h4
+                style="font-size: 0.85rem; font-family: var(--font-heading); font-weight: 500; color: var(--text-white);">
+                Patrol Monitoring</h4>
+            </div>
+            <div class="duty-item">
+              <div style="margin-bottom: 12px;"><i class="fa-solid fa-shield-halved"
+                  style="font-size: 1.85rem; color: var(--accent-gold);"></i></div>
+              <h4
+                style="font-size: 0.85rem; font-family: var(--font-heading); font-weight: 500; color: var(--text-white);">
+                Incident Prevention</h4>
+            </div>
+            <div class="duty-item">
+              <div style="margin-bottom: 12px;"><i class="fa-solid fa-users"
+                  style="font-size: 1.85rem; color: var(--accent-gold);"></i></div>
+              <h4
+                style="font-size: 0.85rem; font-family: var(--font-heading); font-weight: 500; color: var(--text-white);">
+                Crowd Management</h4>
+            </div>
+            <div class="duty-item">
+              <div style="margin-bottom: 12px;"><i class="fa-solid fa-handshake-angle"
+                  style="font-size: 1.85rem; color: var(--accent-gold);"></i></div>
+              <h4
+                style="font-size: 0.85rem; font-family: var(--font-heading); font-weight: 500; color: var(--text-white);">
+                Guest Assistance</h4>
+            </div>
+            <div class="duty-item">
+              <div style="margin-bottom: 12px;"><i class="fa-solid fa-phone-volume"
+                  style="font-size: 1.85rem; color: var(--accent-gold);"></i></div>
+              <h4
+                style="font-size: 0.85rem; font-family: var(--font-heading); font-weight: 500; color: var(--text-white);">
+                Authority Coordination</h4>
+            </div>
+            <div class="duty-item">
+              <div style="margin-bottom: 12px;"><i class="fa-solid fa-clipboard-list"
+                  style="font-size: 1.85rem; color: var(--accent-gold);"></i></div>
+              <h4
+                style="font-size: 0.85rem; font-family: var(--font-heading); font-weight: 500; color: var(--text-white);">
+                Incident Reporting</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TRAINING STANDARDS & VIDEO SECTION -->
+    <section class="training-section" id="training"
+      style="padding: 100px 0; border-bottom: 1px solid var(--border-light); background: var(--bg-primary);">
+      <div class="container">
+        <div class="grid-2-col"
+          style="align-items: center; gap: 48px; display: grid; grid-template-columns: repeat(2, 1fr);"
+          id="training-split-grid">
+          <!-- Left: Training Standards Text Details -->
+          <div class="training-content">
+            <span class="section-tag">Elite Academy</span>
+            <h2 class="section-title" style="margin-bottom: 20px;">Tactical Training Standards</h2>
+            <p style="font-size: 1.05rem; line-height: 1.6; color: var(--text-silver); margin-bottom: 24px;">
+              Defence Force guards undergo an intensive SIRA-certified curriculum, tactical drills, and physical vetting
+              to meet the highest security standards in Dubai and the UAE.
+            </p>
+
+            <ul
+              style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px 24px; margin-bottom: 0;"
+              class="training-list-grid">
+              <li style="display: flex; gap: 12px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; width: 24px; margin-top: 2px;"><i
+                    class="fa-solid fa-file-shield"></i></span>
+                <span
+                  style="color: var(--text-white); font-family: var(--font-heading); font-size: 0.94rem; font-weight: 500; line-height: 1.3;">Security
+                  operations and SOP compliance</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; width: 24px; margin-top: 2px;"><i
+                    class="fa-solid fa-hotel"></i></span>
+                <span
+                  style="color: var(--text-white); font-family: var(--font-heading); font-size: 0.94rem; font-weight: 500; line-height: 1.3;">Customer
+                  service & hospitality awareness</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; width: 24px; margin-top: 2px;"><i
+                    class="fa-solid fa-phone-volume"></i></span>
+                <span
+                  style="color: var(--text-white); font-family: var(--font-heading); font-size: 0.94rem; font-weight: 500; line-height: 1.3;">Emergency
+                  response and incident handling</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; width: 24px; margin-top: 2px;"><i
+                    class="fa-solid fa-comments"></i></span>
+                <span
+                  style="color: var(--text-white); font-family: var(--font-heading); font-size: 0.94rem; font-weight: 500; line-height: 1.3;">Communication
+                  skills and professionalism</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; width: 24px; margin-top: 2px;"><i
+                    class="fa-solid fa-fire-extinguisher"></i></span>
+                <span
+                  style="color: var(--text-white); font-family: var(--font-heading); font-size: 0.94rem; font-weight: 500; line-height: 1.3;">Basic
+                  Fire Safety</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; width: 24px; margin-top: 2px;"><i
+                    class="fa-solid fa-briefcase-medical"></i></span>
+                <span
+                  style="color: var(--text-white); font-family: var(--font-heading); font-size: 0.94rem; font-weight: 500; line-height: 1.3;">First
+                  AID</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; width: 24px; margin-top: 2px;"><i
+                    class="fa-solid fa-user-tie"></i></span>
+                <span
+                  style="color: var(--text-white); font-family: var(--font-heading); font-size: 0.94rem; font-weight: 500; line-height: 1.3;">Appearance,
+                  discipline, and conduct</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; width: 24px; margin-top: 2px;"><i
+                    class="fa-solid fa-shield-halved"></i></span>
+                <span
+                  style="color: var(--text-white); font-family: var(--font-heading); font-size: 0.94rem; font-weight: 500; line-height: 1.3;">V.I.P.
+                  Close Protection Training</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: start;">
+                <span
+                  style="color: var(--accent-gold); font-size: 1rem; display: inline-flex; align-items: center; justify-content: center; width: 24px; margin-top: 2px;"><i
+                    class="fa-solid fa-arrows-spin"></i></span>
+                <span
+                  style="color: var(--text-white); font-family: var(--font-heading); font-size: 0.94rem; font-weight: 500; line-height: 1.3;">Pre-deployment
+                  & Continues Refresher Training</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: Video Space / Frame -->
+          <div class="video-container-wrapper">
+            <div class="video-placeholder glass-card"
+              style="position: relative; border-radius: 20px; overflow: hidden; border: 1px solid var(--border-light); height: 380px; box-shadow: 0 15px 35px rgba(0,0,0,0.6); background: rgba(0,0,0,0.85); display: flex; align-items: center; justify-content: center;">
+              <!-- Subtle background graphics -->
+              <div
+                style="position: absolute; inset: 0; background: radial-gradient(circle, rgba(245,166,35,0.05) 0%, rgba(0,0,0,0) 80%);">
+              </div>
+
+              <!-- Video controls visual preview -->
+              <div class="video-preview-overlay" style="text-align: center; z-index: 2; padding: 24px;">
+                <div class="play-button"
+                  style="width: 72px; height: 72px; border-radius: 50%; background: var(--bg-primary); border: 2px solid var(--accent-gold); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 0 20px rgba(245,166,35,0.25);">
+                  <i class="fa-solid fa-play"
+                    style="color: var(--accent-gold); font-size: 1.5rem; margin-left: 5px;"></i>
+                </div>
+                <h4
+                  style="font-family: var(--font-heading); color: var(--text-white); font-size: 1.15rem; margin-bottom: 6px;">
+                  Watch Training Academy Overview</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-body);">Tactical Drills
+                  & Fitness Vetting Program (3:15 min)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PHOTO GALLERY -->
+    <section class="gallery-section" id="gallery"
+      style="padding: 100px 0; border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Operations Showcase</span>
+          <h2 class="section-title">Defence Force in Action</h2>
+          <p class="section-description mx-auto">
+            A visual overview of our professional guard details, tactical exercises, and protective coverage across the
+            Emirates.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="gallery-tabs"
+          style="display: flex; justify-content: center; gap: 12px; margin-bottom: 40px; flex-wrap: wrap;">
+          <button class="btn btn-outline active" data-filter="all"
+            style="padding: 8px 20px; font-size: 0.85rem;">All</button>
+          <button class="btn btn-outline" data-filter="personnel"
+            style="padding: 8px 20px; font-size: 0.85rem;">Personnel</button>
+          <button class="btn btn-outline" data-filter="training"
+            style="padding: 8px 20px; font-size: 0.85rem;">Training</button>
+          <button class="btn btn-outline" data-filter="operations"
+            style="padding: 8px 20px; font-size: 0.85rem;">Operations</button>
+          <button class="btn btn-outline" data-filter="events"
+            style="padding: 8px 20px; font-size: 0.85rem;">Events</button>
+          <button class="btn btn-outline" data-filter="corporate"
+            style="padding: 8px 20px; font-size: 0.85rem;">Corporate</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid"
+          style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
+          <!-- Item 1: Security Personnel -->
+          <div class="gallery-item glass-card" data-category="personnel" style="transition: all 0.4s ease;">
+            <img src="hero_bg.png" alt="Security Personnel" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Security Personnel</span>
+              <h4 class="gallery-title">Security Personnel</h4>
+            </div>
+          </div>
+
+          <!-- Item 2: Corporate Security -->
+          <div class="gallery-item glass-card" data-category="corporate" style="transition: all 0.4s ease;">
+            <img src="surveillance.png" alt="Corporate Security" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Corporate Security</span>
+              <h4 class="gallery-title">Corporate Security</h4>
+            </div>
+          </div>
+
+          <!-- Item 3: Event Security -->
+          <div class="gallery-item glass-card" data-category="events" style="transition: all 0.4s ease;">
+            <img src="vip_escort.png" alt="Event Security" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Event Security</span>
+              <h4 class="gallery-title">Event Security</h4>
+            </div>
+          </div>
+
+          <!-- Item 4: Training Sessions -->
+          <div class="gallery-item glass-card" data-category="training" style="transition: all 0.4s ease;">
+            <img src="about_training.png" alt="Training Sessions" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Training Sessions</span>
+              <h4 class="gallery-title">Training Sessions</h4>
+            </div>
+          </div>
+
+          <!-- Item 5: Patrol Operations -->
+          <div class="gallery-item glass-card" data-category="operations" style="transition: all 0.4s ease;">
+            <img src="vip_escort.png" alt="Patrol Operations" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Patrol Operations</span>
+              <h4 class="gallery-title">Patrol Operations</h4>
+            </div>
+          </div>
+
+          <!-- Item 6: Hospitality Security -->
+          <div class="gallery-item glass-card" data-category="corporate" style="transition: all 0.4s ease;">
+            <img src="surveillance.png" alt="Hospitality Security" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Hospitality Security</span>
+              <h4 class="gallery-title">Hospitality Security</h4>
+            </div>
+          </div>
+
+          <!-- Item 7: Residential Security -->
+          <div class="gallery-item glass-card" data-category="corporate" style="transition: all 0.4s ease;">
+            <img src="hero_bg.png" alt="Residential Security" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Residential Security</span>
+              <h4 class="gallery-title">Residential Security</h4>
+            </div>
+          </div>
+
+          <!-- Item 8: Team Leadership -->
+          <div class="gallery-item glass-card" data-category="personnel" style="transition: all 0.4s ease;">
+            <img src="about_training.png" alt="Team Leadership" class="gallery-img">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Team Leadership</span>
+              <h4 class="gallery-title">Team Leadership</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. VISION, MISSION & VALUES SECTION -->
+    <section class="vision-mission-section" id="vision-values"
+      style="padding: 100px 0; border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Directives & Alignment</span>
+          <h2 class="section-title">Vision, Mission & Core Values</h2>
+          <p class="section-description mx-auto">
+            Governing our guard force with strict regulatory compliance, absolute integrity, and client trust.
+          </p>
+        </div>
+
+        <div class="grid-2-col" style="align-items: stretch; margin-bottom: 48px;">
+          <!-- Left Column: Slogan Callout and Compliance -->
+          <div class="glass-card"
+            style="padding: 40px; display: flex; flex-direction: column; justify-content: center; border-left: 4px solid var(--accent-gold);">
+            <span
+              style="font-size: 1.25rem; font-family: var(--font-heading); color: var(--accent-gold); font-weight: 600; margin-bottom: 12px; display: block;">Our
+              Philosophy</span>
+            <blockquote
+              style="font-family: var(--font-heading); font-size: 2rem; line-height: 1.3; font-weight: 700; color: var(--text-white); margin-bottom: 24px;">
+              "We don't sell guards. We build security you can trust."
+            </blockquote>
+            <hr style="border: 0; border-top: 1px solid var(--border-light); margin-bottom: 24px;">
+            <span
+              style="font-size: 0.85rem; font-family: var(--font-heading); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; display: block;">Regulatory
+              Compliance</span>
+            <ul class="bento-list"
+              style="grid-template-columns: 1fr; gap: 12px; margin-bottom: 0; list-style: none; padding-left: 0;">
+              <li style="color: var(--text-silver); font-size: 0.95rem; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-file-shield"
+                  style="color: var(--accent-gold); font-size: 1rem; width: 18px; text-align: center;"></i>Fully
+                licensed security services provider in the UAE
+              </li>
+              <li style="color: var(--text-silver); font-size: 0.95rem; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-building-shield"
+                  style="color: var(--accent-gold); font-size: 1rem; width: 18px; text-align: center;"></i>Compliant
+                with SIRA / relevant regulatory authorities
+              </li>
+              <li style="color: var(--text-silver); font-size: 0.95rem; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-scale-balanced"
+                  style="color: var(--accent-gold); font-size: 1rem; width: 18px; text-align: center;"></i>Adherence to
+                UAE labor laws and security regulations
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Column: Vision & Mission -->
+          <div style="display: flex; flex-direction: column; gap: 24px;">
+            <div class="glass-card" style="padding: 32px; border-left: 3px solid var(--accent-gold);">
+              <h3
+                style="font-size: 1.35rem; color: var(--text-white); margin-bottom: 12px; font-family: var(--font-heading); display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-eye" style="color: var(--accent-gold); font-size: 1.2rem;"></i>Vision
+              </h3>
+              <p style="font-size: 0.98rem; line-height: 1.6; color: var(--text-gray);">
+                To be Dubai's most trusted and innovative security partner.
+              </p>
+            </div>
+
+            <div class="glass-card" style="padding: 32px; border-left: 3px solid var(--accent-gold);">
+              <h3
+                style="font-size: 1.35rem; color: var(--text-white); margin-bottom: 12px; font-family: var(--font-heading); display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-bullseye" style="color: var(--accent-gold); font-size: 1.2rem;"></i>Mission
+              </h3>
+              <p style="font-size: 0.98rem; line-height: 1.6; color: var(--text-gray);">
+                To provide reliable, professional and client-focused security solutions that protect people, property
+                and reputation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Values Grid -->
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 24px;"
+          class="values-grid">
+          <div class="glass-card" style="padding: 24px; text-align: center;">
+            <div style="margin-bottom: 12px;"><i class="fa-solid fa-scale-balanced"
+                style="font-size: 2rem; color: var(--accent-gold);"></i></div>
+            <h4 style="font-size: 1.15rem; margin-bottom: 8px; font-family: var(--font-heading);">Integrity</h4>
+            <p style="font-size: 0.85rem; color: var(--text-gray);">Ethical conduct and accountability at all times.</p>
+          </div>
+          <div class="glass-card" style="padding: 24px; text-align: center;">
+            <div style="margin-bottom: 12px;"><i class="fa-solid fa-user-tie"
+                style="font-size: 2rem; color: var(--accent-gold);"></i></div>
+            <h4 style="font-size: 1.15rem; margin-bottom: 8px; font-family: var(--font-heading);">Professionalism</h4>
+            <p style="font-size: 0.85rem; color: var(--text-gray);">Proper appearance, discipline, and behavior.</p>
+          </div>
+          <div class="glass-card" style="padding: 24px; text-align: center;">
+            <div style="margin-bottom: 12px;"><i class="fa-solid fa-square-check"
+                style="font-size: 2rem; color: var(--accent-gold);"></i></div>
+            <h4 style="font-size: 1.15rem; margin-bottom: 8px; font-family: var(--font-heading);">Reliability</h4>
+            <p style="font-size: 0.85rem; color: var(--text-gray);">Consistent service delivery and manpower stability.
+            </p>
+          </div>
+          <div class="glass-card" style="padding: 24px; text-align: center;">
+            <div style="margin-bottom: 12px;"><i class="fa-solid fa-handshake-angle"
+                style="font-size: 2rem; color: var(--accent-gold);"></i></div>
+            <h4 style="font-size: 1.15rem; margin-bottom: 8px; font-family: var(--font-heading);">Client Partnership
+            </h4>
+            <p style="font-size: 0.85rem; color: var(--text-gray);">Long-term relationships built on trust.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION -->
+    <section class="contact-section" id="contact" style="padding: 100px 0; border-top: 1px solid var(--border-light);">
+      <div class="container">
+        <!-- Three blocks before the form -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 56px;"
+          class="contact-blocks-grid">
+          <!-- Operations & Support -->
+          <div class="glass-card" style="padding: 32px; border-top: 3px solid var(--accent-gold);">
+            <h3
+              style="font-size: 1.25rem; color: var(--text-white); margin-bottom: 16px; font-family: var(--font-heading); display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-sliders" style="color: var(--accent-gold); font-size: 1.1rem;"></i>Operations &
+              Support
+            </h3>
+            <ul
+              style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--text-gray);">
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> 24/7 Operations</li>
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Dedicated Account Coordination</li>
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Site Inspections</li>
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Performance Monitoring</li>
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Clear Escalation Procedures</li>
+            </ul>
+          </div>
+
+          <!-- Client Commitment -->
+          <div class="glass-card" style="padding: 32px; border-top: 3px solid var(--accent-gold);">
+            <h3
+              style="font-size: 1.25rem; color: var(--text-white); margin-bottom: 16px; font-family: var(--font-heading); display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-award" style="color: var(--accent-gold); font-size: 1.1rem;"></i>Client Commitment
+            </h3>
+            <ul
+              style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--text-gray);">
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Consistent Service Quality</li>
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Compliance & Risk Control</li>
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Value-Driven Solutions</li>
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Long-Term Partnerships</li>
+            </ul>
+          </div>
+
+          <!-- Flexible Pricing -->
+          <div class="glass-card" style="padding: 32px; border-top: 3px solid var(--accent-gold);">
+            <h3
+              style="font-size: 1.25rem; color: var(--text-white); margin-bottom: 16px; font-family: var(--font-heading); display: flex; align-items: center; gap: 8px;">
+              <i class="fa-solid fa-hand-holding-dollar"
+                style="color: var(--accent-gold); font-size: 1.1rem;"></i>Flexible Pricing
+            </h3>
+            <ul
+              style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--text-gray);">
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Competitive Rates</li>
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Customized Proposals</li>
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Long-Term Contracts</li>
+              <li style="display: flex; gap: 8px; align-items: center;"><i class="fa-solid fa-check"
+                  style="color: var(--accent-gold); font-size: 0.85rem;"></i> Trial Arrangements Available</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-2-col" style="gap: 48px;">
+          <!-- Left: Contact Information & CTA -->
+          <div class="contact-details-card glass-card"
+            style="padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+            <span class="section-tag" style="margin-bottom: 8px;">Operations HQ</span>
+            <h2 class="contact-panel-title"
+              style="font-size: 1.85rem; margin-bottom: 16px; color: var(--text-white); font-family: var(--font-heading);">
+              Get in Touch with Command</h2>
+            <p class="contact-panel-text"
+              style="color: var(--text-gray); font-size: 0.95rem; line-height: 1.6; margin-bottom: 32px;">
+              Reach out to our security dispatch command center to discuss site surveys, guard placement rates, or
+              specialized training programs.
+            </p>
+            <div class="contact-details" style="display: flex; flex-direction: column; gap: 24px;">
+              <div class="detail-item" style="display: flex; gap: 16px; align-items: start;">
+                <span class="detail-icon" style="color: var(--accent-gold); width: 24px; text-align: center;"><i
+                    class="fa-solid fa-location-dot" style="font-size: 1.25rem;"></i></span>
+                <div class="detail-text" style="display: flex; flex-direction: column;">
+                  <strong style="color: var(--text-white); margin-bottom: 2px;">Corporate HQ</strong>
+                  <span style="color: var(--text-gray); font-size: 0.9rem;">Amsaf Building, Office No. 34, near Dnata,
+                    DCC, Dubai, UAE</span>
+                </div>
+              </div>
+              <div class="detail-item" style="display: flex; gap: 16px; align-items: start;">
+                <span class="detail-icon" style="color: var(--accent-gold); width: 24px; text-align: center;"><i
+                    class="fa-solid fa-phone" style="font-size: 1.2rem;"></i></span>
+                <div class="detail-text" style="display: flex; flex-direction: column;">
+                  <strong style="color: var(--text-white); margin-bottom: 2px;">Guard Dispatch Hotline</strong>
+                  <span><a href="tel:+971566381801"
+                      style="color: var(--accent-gold); text-decoration: none; font-size: 0.95rem;">+971 56 638
+                      1801</a></span>
+                </div>
+              </div>
+              <div class="detail-item" style="display: flex; gap: 16px; align-items: start;">
+                <span class="detail-icon" style="color: var(--accent-gold); width: 24px; text-align: center;"><i
+                    class="fa-solid fa-envelope" style="font-size: 1.2rem;"></i></span>
+                <div class="detail-text" style="display: flex; flex-direction: column;">
+                  <strong style="color: var(--text-white); margin-bottom: 2px;">Operations Email</strong>
+                  <span><a href="mailto:info@defenceforceuae.com"
+                      style="color: var(--accent-gold); text-decoration: none; font-size: 0.95rem;">info@defenceforceuae.com</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="contact-cta-wrapper" style="margin-top: 32px;">
+              <a href="tel:+971566381801" class="btn btn-primary"><i class="fa-solid fa-phone"
+                  style="margin-right: 8px;"></i>Call Dispatch Center</a>
+            </div>
+          </div>
+
+          <!-- Right: Google Maps Embed (Deira City Centre, Dubai) -->
+          <div class="map-container glass-card"
+            style="border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; height: 100%; min-height: 400px;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.2327429188094!2d55.32986427596846!3d25.26274492900742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5cc114bf597b%3A0x1d3a58e0fb4ef98e!2sDeira%20City%20Centre!5e0!3m2!1sen!2sae!4v1782398400000!5m2!1sen!2sae"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" class="map-iframe">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. FOOTER SECTION -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <!-- Column 1: Company Information -->
+      <div class="footer-brand">
+        <a href="#hero" class="logo"
+          style="display: flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 20px;">
+          <img src="logo.png" alt="Defence Force Logo" style="height: 38px; width: auto; object-fit: contain;">
+          <span
+            style="font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem; letter-spacing: 0.05em; color: var(--text-white);"><span
+              style="color: var(--accent-gold);">D</span>EFENCE<span
+              style="color: var(--text-muted); font-weight: 400;"> FORCE</span></span>
+        </a>
+        <p class="footer-desc">
+          Total security guard provider built on absolute trust, SIRA compliance, and tactical precision. Safeguarding
+          individuals and businesses UAE nationwide.
+        </p>
+      </div>
+
+      <!-- Column 2: Address, Phone, Email -->
+      <div class="footer-links-col">
+        <h4>Command Details</h4>
+        <ul class="footer-contact-info">
+          <li>
+            <strong>Office:</strong> Amsaf Building, Office No. 34, near Dnata, DCC, Dubai, UAE
+          </li>
+          <li>
+            <strong>Phone:</strong> +971 56 638 1801
+          </li>
+          <li>
+            <strong>Email:</strong> info@defenceforceuae.com
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Useful Links -->
+      <div class="footer-links-col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#enquiry">Enquiry Form</a></li>
+          <li><a href="#about">About & Services</a></li>
+          <li><a href="#training">Training Standards</a></li>
+          <li><a href="#gallery">Photo Gallery</a></li>
+          <li><a href="#vision-values">Vision & Core Values</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Compliance & Social Icons -->
+      <div class="footer-links-col">
+        <h4>Accreditation & Social</h4>
+        <span class="license-badge">License No: SIRA-98014-GGS</span>
+        <p class="footer-legal-text" style="margin-top: 16px;">
+          SIRA Registered UAE Guard Force.
+        </p>
+
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.87c0-.26.05-.52.13-.7a1.11 1.11 0 0 1 .97-.7c.66 0 .8.54.8 1.1v5.17h2.8M6.5 8.37a1.37 1.37 0 1 0 0-2.75 1.37 1.37 0 0 0 0 2.75M8 18.5V10.13H5V18.5h3z" />
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="X (Twitter)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.2 3h2.7l-6 6.8 7.1 9.2h-5.5l-4.3-5.6-4.9 5.6H4.6l6.4-7.3L4 3h5.6l3.9 5.2L18.2 3zm-.9 14.4h1.5L8.7 5.2H7.1l10.2 12.2z" />
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2m-.2 2C5.3 4 4 5.3 4 7.6v8.8C4 18.7 5.3 20 7.6 20h8.8c2.3 0 3.6-1.3 3.6-3.6V7.6C20 5.3 18.7 4 16.4 4H7.6m4.4 3a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m5-2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p class="copyright">
+          &copy; 2026 Defence Force Security Service LLC. All rights reserved.
+        </p>
+        <p class="footer-meta">
+          Dubai, United Arab Emirates
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
