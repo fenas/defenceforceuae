@@ -1,0 +1,9 @@
+{
+  "name": "defenceforce",
+  "version": "1.0.0",
+  "description": "Defence Force Security website",
+  "main": "index.html",
+  "dependencies": {
+    "resend": "^3.2.0"
+  }
+}

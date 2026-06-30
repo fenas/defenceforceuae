@@ -59,16 +59,16 @@ document.addEventListener('DOMContentLoaded', () => {
      3. ACTIVE NAVIGATION HIGHLIGHTING (SCROLL MONITOR)
      ========================================================================== */
   const sections = document.querySelectorAll('section[id]');
-  
+
   const highlightNavigation = () => {
     const scrollY = window.scrollY;
-    
+
     sections.forEach(current => {
       const sectionHeight = current.offsetHeight;
       const sectionTop = current.offsetTop - 120; // offset header
       const sectionId = current.getAttribute('id');
       const activeLink = document.querySelector(`.nav-link[href*="${sectionId}"]`);
-      
+
       if (activeLink) {
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
           navLinks.forEach(link => link.classList.remove('active'));
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const rect = heroSection.getBoundingClientRect();
       const x = e.clientX - rect.left; // x position inside container
       const y = e.clientY - rect.top;  // y position inside container
-      
+
       // Smoothly move the glow to coordinates
       heroGlow.style.transform = `translate(${x - 300}px, ${y - 300}px)`;
     });
@@ -103,10 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
      6. SCROLL REVEAL ANIMATIONS
      ========================================================================== */
   const revealElements = [
-    '.section-header', 
-    '.bento-card', 
-    '.process-step', 
-    '.feature-card', 
+    '.section-header',
+    '.bento-card',
+    '.process-step',
+    '.feature-card',
     '.grid-2-col > div',
     '.contact-wrapper',
     '.gallery-item',
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       galleryItems.forEach(item => {
         const itemCategory = item.getAttribute('data-category');
-        
+
         if (filterValue === 'all' || itemCategory === filterValue) {
           item.style.display = 'block';
           // Smooth fade in
@@ -235,26 +235,63 @@ document.addEventListener('DOMContentLoaded', () => {
   if (contactForm && formFeedback && formSubmitBtn) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      
+
       // Visual feedback submit
       formSubmitBtn.disabled = true;
-      formSubmitBtn.textContent = 'Processing Guard Placement Request...';
-      
-      // Simulate API submit delay
-      setTimeout(() => {
-        formFeedback.style.display = 'block';
-        formFeedback.textContent = '✓ SECURE TRANSMISSION COMPLETED. Our tactical dispatch team will coordinate contact within 2 hours.';
-        formFeedback.className = 'form-feedback success';
-        contactForm.reset();
-        
-        formSubmitBtn.disabled = false;
-        formSubmitBtn.textContent = 'Submit Guard Placement Request';
-        
-        // Clear message after 8 seconds
-        setTimeout(() => {
-          formFeedback.style.display = 'none';
-        }, 8000);
-      }, 1500);
+      formSubmitBtn.textContent = 'Sending Enquiry...';
+
+      // Gather form data
+      const nameVal = document.getElementById('contact-name').value;
+      const companyVal = document.getElementById('contact-company').value || 'Not Provided';
+      const emailVal = document.getElementById('contact-email').value;
+      const sectorVal = document.getElementById('contact-sector').value;
+      const messageVal = document.getElementById('contact-message').value;
+
+      const payload = {
+        name: nameVal,
+        company: companyVal,
+        email: emailVal,
+        sector: sectorVal,
+        message: messageVal
+      };
+
+      // Send to Netlify serverless function
+      fetch('/.netlify/functions/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          formFeedback.style.display = 'block';
+          formFeedback.textContent = '✓ SECURE TRANSMISSION COMPLETED. Our tactical dispatch team will coordinate contact within 2 hours.';
+          formFeedback.className = 'form-feedback success';
+          contactForm.reset();
+
+          formSubmitBtn.disabled = false;
+          formSubmitBtn.textContent = 'Submit Enquiry';
+
+          // Clear message after 8 seconds
+          setTimeout(() => {
+            formFeedback.style.display = 'none';
+          }, 8000);
+        })
+        .catch(error => {
+          console.error('Error submitting form:', error);
+          formFeedback.style.display = 'block';
+          formFeedback.textContent = '✗ TRANSMISSION FAILED. Please check your network or try again later.';
+          formFeedback.className = 'form-feedback error';
+
+          formSubmitBtn.disabled = false;
+          formSubmitBtn.textContent = 'Submit Enquiry';
+        });
     });
   }
 });
