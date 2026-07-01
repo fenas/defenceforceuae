@@ -44,7 +44,7 @@ exports.handler = async (event, context) => {
     // Send the email
     const { data, error } = await resend.emails.send({
       from: 'Defence Force Security <onboarding@resend.dev>', // Replace with your verified domain in Resend if needed
-      to: ['fenas.fnz@gmail.com'],
+      to: ['info@defenceforceuae.com'],
       subject: `New Enquiry from ${name} - Defence Force Security`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
