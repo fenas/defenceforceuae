@@ -305,13 +305,13 @@ document.addEventListener('DOMContentLoaded', () => {
         <iframe 
           width="100%" 
           height="100%" 
-          src="https://www.youtube-nocookie.com/embed/GxZ_8do3LiE?autoplay=1" 
+          src="https://www.youtube-nocookie.com/embed/GxZ_8do3LiE?autoplay=1&modestbranding=1&rel=0" 
           title="Defence Force Security Training Academy Overview" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen 
-          style="border: 0; position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 20px;">
+          style="border: 0; position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 20px; transform: scale(1.3); transform-origin: bottom center;">
         </iframe>
       `;
     });
