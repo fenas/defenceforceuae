@@ -2357,3 +2357,30 @@ ul {
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+
+/* ==========================================================================
+   INTERACTIVE VIDEO SECTION
+   ========================================================================== */
+.video-placeholder {
+  cursor: pointer;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-placeholder:hover {
+  border-color: var(--accent-gold-dark) !important;
+  box-shadow: 0 20px 40px rgba(255, 179, 0, 0.15) !important;
+  transform: translateY(-2px);
+}
+
+.video-placeholder:hover .play-button {
+  transform: scale(1.1);
+  background: var(--accent-gold) !important;
+  box-shadow: 0 0 25px rgba(255, 179, 0, 0.4) !important;
+}
+
+.video-placeholder:hover .play-button i {
+  color: var(--bg-primary) !important;
+}
